@@ -1,7 +1,5 @@
 name: Test
-on: push
-# a simple comment
-# another comment
+on: workflow_dispatch
 jobs:
   test:
     runs-on: ubuntu-latest
