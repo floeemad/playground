@@ -7,6 +7,8 @@ jobs:
       - name: Echo something
         run: echo "something"
   deploy:
+    needs:
+      - test
     runs-on: ubuntu-latest
     steps:
       - name: Echo another
