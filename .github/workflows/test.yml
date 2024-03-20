@@ -1,6 +1,7 @@
 name: Test
 on: push
 # a simple comment
+# another comment
 jobs:
   test:
     runs-on: ubuntu-latest
