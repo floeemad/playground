@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Setup Maven Action
         uses: s4u/setup-maven-action@v1.12.0
+      - name: build the uber jar
+        run: mvn clean package
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
