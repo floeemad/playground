@@ -1,5 +1,16 @@
 name: Output information
-on: workflow_dispatch
+on:
+  pull_request:
+    types:
+      - opened
+  workflow_dispatch:
+  push:
+    branches:
+      - main # main
+      - 'dev-*' # dev-new dev-this-new
+      - 'feat-**' # feat-new/ feat/new/button
+    paths:
+      - ".github/workflows/*"
 jobs:
   output:
     runs-on: ubuntu-latest
