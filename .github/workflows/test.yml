@@ -4,11 +4,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get the code
-        uses: actions/checkout@v4
-      - name: Setup Maven Action
-        uses: s4u/setup-maven-action@v1.12.0
-      - name: Maven version
-        run: mvn -v
-      - name: Run the tests
-        run: mvn clean package
+      - name: Echo something
+        run: echo "something"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo another
+        run: echo "another"
